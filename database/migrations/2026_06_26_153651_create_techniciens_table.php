@@ -1,0 +1,30 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Créer la table techniciens.
+     */
+    public function up(): void
+    {
+        Schema::create('techniciens', function (Blueprint $table) {
+            $table->id();
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('specialite');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Supprimer la table techniciens en cas de rollback.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('techniciens');
+    }
+};
