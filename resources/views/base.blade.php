@@ -7,6 +7,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Design proposal (branch: design/proposition) -->
+    <link href="{{ asset('css/design-proposal.css') }}" rel="stylesheet">
+
     <style>
         body {
             background-color: #f4f7fb;
